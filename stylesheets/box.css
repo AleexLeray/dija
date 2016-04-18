@@ -1,0 +1,323 @@
+/* line 5, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../font/Avenir-Light.ttf");
+}
+/* line 30, ../sass/box.scss */
+.modal {
+  font-family: "Avenir";
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/ opacity */
+}
+@media only screen and (max-width: 768px) {
+  /* line 30, ../sass/box.scss */
+  .modal {
+    position: relative;
+    margin: auto;
+    height: auto;
+    overflow: scroll;
+  }
+}
+/* line 50, ../sass/box.scss */
+.modal .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  display: flex;
+  margin: 1% 15%;
+  padding: 10px;
+  border: 1px solid #888;
+  border-radius: 0;
+  width: 70%;
+  height: 90%;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+@media only screen and (max-width: 980px) {
+  /* line 50, ../sass/box.scss */
+  .modal .modal-content {
+    width: 80%;
+    height: 100%;
+    margin: 1% 10%;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 50, ../sass/box.scss */
+  .modal .modal-content {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+}
+/* line 77, ../sass/box.scss */
+.modal .container_info_site {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  line-height: 25px;
+  padding-right: 10px;
+  border-right: 1px solid #d5d5d5;
+  box-shadow: 4px 4px 2px 0px #cfcfcf;
+}
+@media only screen and (max-width: 980px) {
+  /* line 77, ../sass/box.scss */
+  .modal .container_info_site {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 77, ../sass/box.scss */
+  .modal .container_info_site {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* line 93, ../sass/box.scss */
+.modal .container_info_site img {
+  width: 100%;
+  height: 60%;
+}
+/* line 97, ../sass/box.scss */
+.modal .container_info_site #titre {
+  margin-bottom: 3%;
+}
+/* line 100, ../sass/box.scss */
+.modal .container_info_site #description {
+  font-size: 14px;
+  margin-top: 1%;
+}
+/* line 106, ../sass/box.scss */
+.modal .container_commentaire {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  margin-left: 10px;
+  box-shadow: 4px 4px 2px 0px #cfcfcf;
+}
+@media only screen and (max-width: 980px) {
+  /* line 106, ../sass/box.scss */
+  .modal .container_commentaire {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+  }
+}
+/* line 120, ../sass/box.scss */
+.modal .container_commentaire h1 {
+  text-align: center;
+  height: 30px;
+  margin-top: 12px;
+  box-shadow: 4px 4px 2px 0px #cfcfcf;
+}
+/* line 126, ../sass/box.scss */
+.modal .container_commentaire .reponse_commentaire {
+  width: 100%;
+  height: 49%;
+  margin-bottom: 3%;
+  background-color: rgba(162, 209, 199, 0.2);
+  overflow: scroll;
+  overflow-x: hidden;
+}
+/* line 134, ../sass/box.scss */
+.modal .container_commentaire .reponse_commentaire .mesCommentaire {
+  width: 95%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5%;
+  font-size: 13px;
+  margin: 3% auto;
+  background-color: rgba(92, 113, 95, 0.3);
+}
+/* line 144, ../sass/box.scss */
+.modal .container_commentaire .reponse_commentaire .mesCommentaire i {
+  background-color: #000f37;
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+}
+/* line 152, ../sass/box.scss */
+.modal .container_commentaire .comments {
+  width: 100;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -4px -13px 0px -6px #f2f2f2;
+}
+@media only screen and (max-width: 980px) {
+  /* line 152, ../sass/box.scss */
+  .modal .container_commentaire .comments {
+    height: 100%;
+    margin: auto;
+  }
+}
+/* line 163, ../sass/box.scss */
+.modal .container_commentaire .comments form {
+  width: 98%;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* line 171, ../sass/box.scss */
+.modal .container_commentaire .comments form #username {
+  width: 97%;
+  margin: auto;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed #bebebe;
+  margin-bottom: 15px;
+}
+/* line 180, ../sass/box.scss */
+.modal .container_commentaire .comments form #answer {
+  width: 97%;
+  margin: auto;
+  background-color: transparent;
+  border: none;
+  margin-left: 2%;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #bebebe;
+}
+/* line 189, ../sass/box.scss */
+.modal .container_commentaire .comments form label {
+  font-family: "Avenir";
+  font-size: 14px;
+  margin-left: 7px;
+  display: flex;
+  align-items: center;
+}
+/* line 196, ../sass/box.scss */
+.modal .container_commentaire .comments form .btn_send {
+  padding: 10px;
+  background-color: #a2d1c7;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+/* line 202, ../sass/box.scss */
+.modal .container_commentaire .comments form .btn_send:hover {
+  background-color: #7096b1;
+}
+/* line 208, ../sass/box.scss */
+.modal .container_commentaire .comments legend {
+  background-color: #efefef;
+  border: 1px solid #dcdcdc;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+/* line 222, ../sass/box.scss */
+.modal .close {
+  color: #999;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 28px;
+  right: 0px;
+  margin-right: 15%;
+  z-index: 20000;
+  position: absolute;
+}
+/* line 232, ../sass/box.scss */
+.modal .close:focus, .modal .close:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 980px) {
+  /* line 222, ../sass/box.scss */
+  .modal .close {
+    margin-right: 5%;
+    right: 0;
+  }
+}

@@ -1,0 +1,369 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+ @import "compass/reset";
+ @import "compass";
+ @font-face {
+ 	font-family: "Avenir";
+ 	src: url('../font/Avenir-Light.ttf');
+ }
+
+ $couleur-li-menu-left : rgba(#acacac, 0.85);
+ $title-article-font-size:12px;
+ $color-text-article:#dddddd;
+ $title-article-font-size:20px;
+ $color-text-article:#999999;
+
+ nav {
+ 		width: 100%;
+ 		height: 550px;
+ 		background: white url(../images/cover2_1.jpg) no-repeat center center;
+ 		background-size: cover;
+
+		@media screen and (max-width: 768px) {
+    	height: 200px;
+		}
+
+ }
+
+ .menu_left {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+ 	display: flex;
+ 	flex-direction: column;
+ 	line-height: 33px;
+ 	width: 20%;
+
+ 	@media screen and (max-width: 768px) {
+    display: none;
+	}
+
+ 	.container_right_responsive{
+ 		display: none;
+ 	}
+
+
+ 	#home {
+ 		ul {
+ 			li {
+ 				font-size: 15px;
+ 				color: $couleur-li-menu-left;
+ 				&:hover {
+ 					background-color: #d2d2d2;
+ 					width: 120px;
+ 				}
+ 				&:nth-child(1){
+ 					margin-top: 20px;
+ 				}
+ 				&:nth-child(3) {
+ 					margin-bottom: 30px;
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	#categories {
+ 		h3 {
+
+ 			font-weight: bold;
+ 			color: rgb(0, 0, 0);
+ 			border-bottom: 1px solid #e0e0e0;
+ 			width: 100px;
+ 			margin-bottom: 20px;
+ 		}
+
+ 		ul {
+ 			li {
+ 				font-size: 15px;
+ 				color: $couleur-li-menu-left;
+ 				&:hover {
+ 					background-color: #d2d2d2;
+ 					width: 120px;
+ 				}
+ 				&:nth-child(4) {
+ 					margin-bottom: 30px;
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	#topics {
+ 		h3 {
+ 			font-weight: bold;
+ 			color: rgb(1, 1, 1);
+ 			border-bottom: 1px solid #e0e0e0;
+ 			width: 100px;
+ 			margin-bottom: 20px;
+ 		}
+
+ 		ul {
+ 			li {
+ 				font-size: 15px;
+ 				color: $couleur-li-menu-left;
+ 				&:hover {
+ 					background-color: #d2d2d2;
+ 					width: 120px;
+ 				}
+ 				img {
+ 					width: 18px;
+ 				}
+ 			}
+ 		}
+ 	}
+
+ }
+
+ body{
+ 	background-color: #F9F9F9;
+ 	font-family:Avenir;
+
+
+ 	section{
+ 		display: flex;
+   flex-direction: row;
+
+ 		.container_middle{
+ 			margin-top: 20px;
+ 			display: flex;
+ 			flex-direction:column;
+ 			justify-content:center;
+ 			align-items:center;
+ 			background-color: white;
+ 			max-width: 700px;
+ 			padding: 20px;
+ 			border: 1px solid;
+ 			border-color: rgb(242,242,242);
+ 			border-radius: .15em;
+    box-shadow: 4px 4px 2px 0px #cfcfcf;
+
+
+
+ 			.container_middle_title{
+ 				display: flex;
+ 				justify-content:space-between;
+ 				width: 100%;
+ 				height: 30px;
+ 				border-bottom: solid 1px;
+ 				border-color: rgb(242,242,242);
+
+ 				.title_left{
+
+ 					span{
+ 						font-size: $title-article-font-size;
+
+ 					}
+ 				}
+ 				.title_right{
+ 					width: 150px;
+ 					height: 20px;
+ 					display: flex;
+ 					justify-content:space-around;
+
+ 					span{
+
+ 						font-size: 12px;
+ 						&:hover{
+ 							border-bottom: solid 1px;
+ 						}
+ 					}
+ 				}
+
+ 			}
+ 			.container_middle_article{
+ 				display: flex;
+ 				align-items:center;
+ 				justify-content:flex-start;
+ 				flex-wrap:wrap;
+ 				height: auto;
+ 				width: 100%;
+ 				border-bottom: solid 1px;
+ 				border-color: rgb(242,242,242);
+ 				margin-top: 20px;
+ 				padding-bottom: 20px;
+
+
+
+ 				.img_article{
+ 					height: 120px;
+ 					min-width: 120px;
+ 					margin: 20px 20px 20px 0px;
+ 					background: white url("https://source.unsplash.com/category/food") no-repeat center;
+ 					background-size: cover;
+
+ 					@media all and (max-width: 400px) {
+    				width: 100%;
+    				margin-right: 0px;
+					}
+
+ 				}
+ 				.img2{
+ 					background: white url("https://source.unsplash.com/category/food/200x200") no-repeat center;
+ 					background-size: cover;
+ 					}
+ 				.img3{
+ 					background: white url("https://source.unsplash.com/category/food/202x202") no-repeat center;
+ 					background-size: cover;
+ 					}
+ 				.img4{
+ 					background: white url("https://source.unsplash.com/category/food/203x203") no-repeat center;
+ 					background-size: cover;
+ 					}
+ 				.img5{
+ 					background: white url("https://source.unsplash.com/category/food/204x204") no-repeat center;
+ 					background-size: cover;
+ 					}
+ 				.img6{
+ 					background: white url("https://source.unsplash.com/category/food/205x205") no-repeat center;
+ 					background-size: cover;
+ 					}
+ 				.img7{
+ 					background: white url("https://source.unsplash.com/category/food/206x206") no-repeat center;
+ 					background-size: cover;
+ 					}
+ 				.img8{
+ 					background: white url("https://source.unsplash.com/category/food/207x207") no-repeat center;
+ 					background-size: cover;
+ 					}
+ 				.img9{
+ 					background: white url("https://source.unsplash.com/category/food/208x208") no-repeat center;
+ 					background-size: cover;
+ 					}
+ 				.img10{
+ 					background: white url("https://source.unsplash.com/category/food/209x209") no-repeat center;
+ 					background-size: cover;
+ 					}
+
+
+
+ 				.container_info_article{
+
+
+ 					margin: 0px 50px 0px 0px;
+
+
+ 					h2{
+
+ 						margin-bottom: 5px;
+ 						font-size: 17px;
+ 					}
+
+ 					.text_article{
+
+ 						color: $color-text-article;
+ 						font-size: 13px;
+ 					}
+
+
+
+
+ 					.button {
+ 						display: inline-block;
+ 						border-radius: .15em;
+ 						border: 1px solid;
+ 						border-color: rgb(242,242,242);
+ 						color: $color-text-article;
+ 						margin: 5px;
+ 						padding: 5px;
+ 						text-decoration: none;
+ 						text-align: center;
+ 						&:hover{
+ 							background-color: lightgrey;
+
+
+ 						}
+ 						&.down{
+ 							color: black;
+ 						}
+ 						&.up{
+ 							color: black;
+ 						}
+ 					}
+ 				}
+
+ 				.button_web{
+
+
+
+ 					.container_button{
+
+ 						border-radius: .15em;
+ 						background-color: lightgrey;
+
+ 					}
+
+ 					a{
+ 						display: inline-block;
+ 						margin-bottom:10px;
+ 						padding: 5px;
+ 						text-decoration: none;
+ 						text-align: center;
+ 						font-size: 12px;
+ 						color: black;
+ 					}
+ 				}
+ 			}
+ 		}
+
+ 		.container_right{
+ 			margin-top: 20px;
+ 			display: flex;
+ 			flex-direction:column;
+ 			justify-content:center;
+ 			background-color: white;
+ 			padding: 20px;
+ 			border: 1px solid;
+ 			border-color: rgb(242,242,242);
+ 			border-radius: .15em;
+ 			height: 170px;
+ 			margin-left: 30px;
+    box-shadow: 4px 4px 2px 0px #cfcfcf;
+
+
+			@media screen and (max-width: 1200px) {
+    		display: none;
+			}
+
+
+ 			.title_social{
+ 				font-size: 18px;
+ 			}
+
+ 			.text_social{
+ 				font-size: 12px;
+ 				margin-top: 15px;
+ 			}
+
+ 			.twitter{
+ 				background-color: #00aced;
+ 				color: white;
+ 				text-decoration: none;
+ 				border-radius: 3px;
+ 				width: 100%;
+ 				height: 100%;
+ 				text-align: center;
+ 				padding: 10px 0;
+ 				margin-top: 15px;
+
+ 			}
+
+ 			.facebook{
+ 				background-color: #3B5998;
+ 				color: white;
+ 				text-decoration: none;
+ 				border-radius: 3px;
+ 				width: 100%;
+ 				height: 100%;
+ 				text-align: center;
+ 				padding: 10px 0;
+ 				margin-top: 15px;
+ 			}
+
+ 		}
+ 	}
+
+ }
